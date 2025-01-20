@@ -10,8 +10,6 @@ Flight: 6, departure: <departure_city>, arrival: <arrival_city>, day: x
 USER STORY #2
 As an inventory management user, I can generate flight itineraries by scheduling a batch of orders. These flights
 can be used to determine shipping capacity.
- Use the json file attached to load the given orders.
- The orders listed in the json file are listed in priority order ie. 1..N
 Expected output:
 order: order-001, flightNumber: 1, departure: <departure_city>, arrival: <arrival_city>, day: x
 ...
