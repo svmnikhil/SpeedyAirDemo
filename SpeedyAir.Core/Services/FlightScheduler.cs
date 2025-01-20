@@ -43,11 +43,6 @@ public class FlightScheduler : IFlightScheduler
         return _flights;
     }
     
-    public IEnumerable<Flight> GetAvailableFlightsForDestination(string destination)
-    {
-        return _flights.Where(f => f.ArrivalCity == destination && f.CanAcceptOrder());
-    }
-    
     public int? ScheduleOrder(Order order)
     {
         var flight = _flights.FirstOrDefault(f => f.ArrivalCity == order.destination && f.CanAcceptOrder());

@@ -14,8 +14,6 @@ public class OrderProcessor : IOrderProcessor
         _flightScheduler = flightScheduler;
     }
     
-    
-
     public async Task ProcessOrders()
     {
         var orders = await _orderRepository.GetOrders();
